@@ -1,0 +1,826 @@
+<div class="container-fluid banner" style="background: black no-repeat center;">
+  <video
+    autoplay
+    muted
+    loop
+    preload="true"
+    id="myVideo"
+    (loadeddata)="startPlayingVideo()"
+    (playing)="handleVideoLoaded()"
+    (ended)="handleVideoEnded(this)"
+  >
+    <source src="../../assets/videos/banner.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="container text-white">
+    <div class="row">
+      <div class="col-lg-12 banner-info">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <button
+              class="btn font-2 text-white btn-menu-open letter-spacing float-right"
+              (click)="handleMenuOpenClick()"
+              style="font-size: 1.6rem;"
+            >
+              Menu<img class="icon ml-1" src="../../assets/icons/menu.png" />
+            </button>
+            <a class="logo float-none" href=""
+              ><img src="../../assets/images/logo.svg"
+            /></a>
+          </div>
+        </div>
+        <div class="row banner-content mt-5">
+          <div class="col-lg-12 banner-content">
+            <div class="wrapper-1 d-inline-block h-100">
+              <div class="social-links-wrapper h-100" data-aos="zoom-in-up">
+                <div>
+                  <span class="scroll-down font-2">Scroll Down</span>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper-2 d-inline-block">
+              <div class="custom-border-2">
+                01
+              </div>
+            </div>
+            <div class="wrapper-3 d-inline-block ml-1" data-aos="zoom-out-up">
+              <span class="line sm horizontal bg-white"></span>
+              <h4
+                class="font-2 d-inline-block ml-1"
+                style="font-family: inherit;"
+              >
+                GROWING YOUR PROJECT FROM IDEA TO LAUNCH
+              </h4>
+              <br />
+              <img class="banner-image" src="../../assets/images/banner.png" />
+              <a
+                href="/get-quote"
+                class="btn custom-border horizontal font-1 letter-spacing text-white white"
+                >Know More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid first">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-sm-12">
+        <div class="title" data-aos="fade-up">
+          <!-- <span class="d-inline-block line md ml-3"></span> -->
+        </div>
+        <div class="who">
+          <h4
+            class="subtitle"
+            data-aos="fade-up"
+            style="font-size:400%; letter-spacing: 12px; margin-left: 35%; font-family: Roboto, sans-serifinitial;    text-align: inherit;font-weight: bold;"
+          >
+            WHO WE ARE
+          </h4>
+        </div>
+        <div class="about">
+          <h1
+            class="d-inline-block align-middle"
+            style="margin-left: 43%; font-family: Roboto, sans-serifinitial;"
+          >
+            ABOUT US
+          </h1>
+        </div>
+      </div>
+      <div class="col-lg-4" data-aos="flip-left">
+        <div class="imgone">
+          <img
+            src="../../assets/images/2019.png"
+            alt="images"
+            style="    width: 78%;  margin-top: -27px;"
+          />
+        </div>
+      </div>
+      <div class="col-lg-8" data-aos="zoom-in-left">
+        <div class="textone">
+          <p
+            style="margin-top: 6%;
+                      font-size: 20px;
+                      margin-bottom: 1rem;"
+          >
+            Vitican Partners offers software development services to a range of
+            clients. <br />We founded this business in 2019 to provide business
+            owners & individuals with a practical and affordable solution to
+            their software development needs.
+          </p>
+          <hr />
+        </div>
+      </div>
+
+      <div class="col-lg-8" data-aos="zoom-in-right">
+        <div class="texttwo">
+          <p
+            style="margin-top: 13%;
+                font-size: 20px;
+                margin-bottom: 1rem;margin-left: 14%;"
+          >
+            In a short time, we have already gained experience serving
+            everything from start-ups to million-dollar companies. It’s the
+            personal touch that sets Vitican Partners apart from the
+            competition. You are more than just another account to us – you are
+            a valued client and we always be will invested in your success.
+          </p>
+        </div>
+        <hr />
+      </div>
+      <div class="col-lg-4" data-aos="flip-right">
+        <div class="imgtwo">
+          <img
+            src="../../assets/images/SERVICE .png"
+            alt="images"
+            style="    width: 78%;  margin-top: 0%; margin-left: 28%;"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-4" data-aos="flip-left">
+        <div class="imgthree">
+          <img
+            src="../../assets/images/contact.png"
+            alt="images"
+            style="    width: 78%;  margin-top: 2%;"
+          />
+        </div>
+      </div>
+      <div class="col-lg-8" data-aos="zoom-in-left">
+        <p
+          style="margin-top: 13%;
+                font-size: 20px;
+                margin-bottom: 1rem;"
+        >
+          As a small team of professionals, we are flexible enough to adapt our
+          services to the requirements of your project. Contact us today to get
+          started!
+        </p>
+        <hr />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- what can we product -->
+<div class="container-fluid" style="margin-bottom: 8em;">
+  <div class="container-background">
+    <div class="container">
+      <div class="col-lg-12 col-md-12" style="margin-bottom: 4.5em;">
+        <div
+          class="col-lg-12"
+          style="margin-bottom: 7%;
+                 margin-top: 6%;"
+        >
+          <p
+            style="    font-size: 400%;
+                        text-align: center;
+                        color: white;
+                        font-family: Roboto, sans-serifinitial;
+                        font-weight: bold;
+                        letter-spacing: 4px;
+                        margin-top: -3%;
+                        margin-bottom: 4%;"
+          >
+            WHAT CAN WE PRODUCT
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p
+              style="    color: white;
+                        text-align: center;
+                        font-size: 333%;
+                        margin-top: -6%;
+                        font-weight: bold;"
+            >
+              WIDE RANGE OF SERVICE
+            </p>
+            <div class="c-1">
+              <img
+                src="../../assets/images/c-3-3.png"
+                style="     margin-top: 6%;
+                        width: 107%;
+                        margin-left: -3%;"
+              />
+            </div>
+          </div>
+          <!-- <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="c-1">
+              <img src="../../assets/images/c-1.jpg" style="width: 92%;" />
+            </div>
+          </div> -->
+          <!-- <div
+            class="col-lg-6 col-md-6 col-sm-6"
+            style="margin-left: 47%; margin-top: -55%;"
+          >
+            <div class="letter-1">
+              <p
+                style="font-size: 333%;
+                    color: white;
+                    font-family: Roboto, sans-serif;
+                    text-align: center;
+                    font-weight: bold;
+                    margin-top: -10%;
+                    "
+              >
+                SOFTWARE DEVELOPMENT
+              </p>
+            </div>
+            <div class="s-letter-1">
+              <p
+                style="font-size: 20px;
+                        color: white;
+                        font-family: Roboto, sans-serifinitial;"
+              >
+                VITICAN partners offers a comprehensive set of custom software
+                development services to help you grow your business and reach
+                your business goals. Whether it’s custom software, a mobile
+                application, an e-commerce website or a web application, we
+                deliver complex, world-class software solutions. We have several
+                years of experience in fulfilling different demands and can
+                drive success while minimising risk - no matter your project’s
+                specifics.
+              </p>
+            </div>
+            <div class="c-2">
+              <img src="../../assets/images/c-2.jpg" style="width: 92%;" />
+            </div>
+          </div> -->
+          <div class="row">
+            <div class="col-lg-12" style="margin-top: -10%;">
+              <p
+                style="color: white;
+                  font-family: Roboto, sans-serifinitial;
+                  font-size: 333%;
+                  margin-top: 12%;
+                  margin-bottom: -22%;
+                  text-align: center;
+                      font-weight: bold;"
+              >
+                WIDE RANGE OF SERVICE
+              </p>
+              <p
+                style="font-size: 20px;
+                    margin-top: 24%;
+                    font-family: Roboto, sans-serif;
+                                                                  color: white;"
+              >
+                Whether you are an established business or just starting out,
+                with our unique mix of custom development skills and experience
+                in software engineering we are ready to help you from
+                conceptualisation to development.
+              </p>
+              <!-- <div class="c-3"> -->
+              <div class="col-lg-6">
+                <div class="c-2-1">
+                  <a href="/suffer">
+                    <img
+                      src="../../assets/images/c-2-1.png"
+                      style="width: 92%; margin-top: 13%;"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="c-2-2">
+                  <a href="/bolt">
+                    <img
+                      src="../../assets/images/c-2-2.png"
+                      style="width: 103%; margin-top: 27%;"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="c-2-3">
+                  <a href="/lyrical">
+                    <img
+                      src="../../assets/images/c-2-3.png"
+                      style="width: 101%;
+                          margin-top: 13%;
+                          margin-left: -4%;"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="c-2-4">
+                  <a href="/cupid">
+                    <img
+                      src="../../assets/images/c-2-4.png"
+                      style="width: 105%;
+                            margin-top: 29%;
+                            margin-left: -4%;"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="c-2-5">
+                  <a href="/portfolio">
+                    <img
+                      src="../../assets/images/c-2-5.png"
+                      style="width: 98%; margin-top: 13%;"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="c-2-6">
+                  <a href="/diet">
+                    <img
+                      src="../../assets/images/c-2-6.png"
+                      style="width: 99%; margin-top: 29%;"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <!-- </div> -->
+            </div>
+            <!-- <div class="col-lg-5">
+              <img
+                src="../../assets/images/c-4.jpg"
+                style="width: 52%;
+                      margin-top: 107%;
+                      margin-left: 62%;"
+              />
+            </div> -->
+            <div class="col-lg-12"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- <p
+                style="color: white;
+                      font-size: 333%;
+                      margin-top: 14%;
+                      text-align: center;
+                      font-family: Roboto, sans-serif;
+                          font-weight: bold;"
+              >
+                HOW OUR SOFTWARE DEVELOPMENT WORKFLOW WORKS
+              </p> -->
+            </div>
+            <!-- <div class="col-lg-7">
+              <div class="c-4">
+                <img
+                  src="../../assets/images/c-2.jpg"
+                  style="    width: 87%;
+                        margin-top: 7%;
+                        margin-left: 20%;"
+                />
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="c-5">
+                <img
+                  src="../../assets/images/c-2.jpg"
+                  style="margin-top: 113%;
+                margin-left: -11%; "
+                />
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="best">
+  <p
+    style="text-align: center;
+            font-family: Roboto, sans-serifinitial;
+            font-size: 400%;
+            font-weight: bold;
+            letter-spacing: 11px;
+            margin-top: 4%;"
+  >
+    SERVICES
+  </p>
+  <h2
+    style="     letter-spacing: 3.08px;
+            font-size: 24px;
+            font-family: Roboto, sans-serifinitial;
+            text-align: center;
+"
+  >
+    The Best we Can provide
+  </h2>
+</div>
+
+<div class="container der">
+  <div class="row">
+    <div class="col-lg-12 col-md-12" style="margin-bottom: -7.5em;">
+      <div>
+        <h1
+          class="d-inline-block align-middle"
+          style="color: white; margin-top: 0px; margin-bottom: 10px; margin-left: 42;"
+        >
+          CLIENTS
+        </h1>
+        <span class="d-inline-block line md ml-3 bg-white"></span>
+      </div>
+      <h2
+        style="margin-left: 165px;     font-family: Bebas Neue, cursive;
+            letter-spacing: 5.08px;
+            font-size: 17px; margin-left: 0px; color: white;"
+      >
+        who we are
+      </h2>
+    </div>
+    <div class="col-sm-3">
+      <div class="serviceBox" style="width: 100%;">
+        <!-- <i class="service-icon fa fa-globe"></i> -->
+        <!-- <i class="fas fa-mobile-alt"></i> -->
+        <!-- <i class="fas fa-mobile"></i> -->
+        <h3 class="title">Mobile App Development</h3>
+        <p class="description">
+          The modern world is constantly on the go, and a mobile app allows you
+          to stay with your customers at all times. Even if you only have a
+          basic idea and little else, our team will take the lead and design an
+          appropriate app structure. We’ve developed apps from companies ranging
+          from startups to established, million-dollar operations.
+
+          <!--  Any app you put out into the market that represents your brand needs to be a polished, finished product. What you’ll get from Vitican is an app that looks great on the user side while featuring all of the reliable backend details needed to run properly day after day. -->
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="serviceBox" style="width: 100%;">
+        <!-- <i class="service-icon fa fa-rocket"></i> -->
+        <h3 class="title">UI/UX Design</h3>
+        <p class="description">
+          Even the best business idea can be undone by poor design. If your
+          users are confused or frustrated by your user experience, they’ll
+          simply look for somewhere else to go. Turn this job over to us and
+          look forward to a stunning, functional design for your site or app.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="serviceBox" style="width: 100%;">
+        <h3 class="title">Website Development</h3>
+        <p class="description">
+          Without a website, you are invisible in today’s marketplace. While
+          it’s easy to get a site up on the web today, doing it right is a
+          challenge that’s best left to the pros. Have your website developed by
+          Vitican Partners to stand out from the competition and grab more sales
+          than ever before.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="serviceBox" style="width: 100%;">
+        <h3 class="title">Partner Strategy Consulting</h3>
+        <p class="description">
+          As a business owner, you are an expert in your field – but you might
+          not know the first thing about technology. And that’s okay! By working
+          with Vitican Partners, you will have access to the tech insight you
+          need to grow your business. As a partner, we will offer you large
+          discounts on our development services.
+        </p>
+      </div>
+      <div class="getbutton">
+        <a href="/get-quote" style="font-size: 1.6rem;">
+          <img
+            src="../../assets/images/GETBUTTON.jpg"
+            alt="Atul Prajapati"
+            style="    height: 37px;width: 143px;margin-top: 30px; margin-left: 53px;"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </div> -->
+
+<div class="container-fluid fourth">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-12"
+        style="    margin-top: 8%;
+              margin-bottom: 6%;"
+      >
+        <span
+          class="d-inline-block"
+          style="    font-size: 19px;     font-family: inherit;    margin-left: 5%;"
+        >
+          The experience of working with Vitican Partners is different than what
+          you will get with most other developers. If you work with a large
+          corporation for your next project, you’ll be left with a generic
+          product that mimics hundreds or thousands of other jobs they have
+          completed – and you’ll have a $50K+ bill to go along with it. Safe to
+          say, that’s not how things work here. At Vitican, we are all about
+          personal relationships. We don’t want to stick your project into an
+          algorithm and spit out a copy-paste project that you will soon forget.
+          Rather, we want to get to know you, your business, and your specific
+          goals for the future. With a true partnership, we can build a
+          relationship that lasts for years and benefits all involved. Whether
+          you have a complete picture of what you want to build or just a basic
+          idea – or even no idea at all – we are here to serve you. Contact us
+          today!
+        </span>
+        <div class="VP">
+          <img
+            class="d-inline-block"
+            width="50"
+            src="../../assets/images/logo-sm.png"
+            style="margin-top: -23%;
+                    margin-left: -1%;"
+          />
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="title" data-aos="fade-up">
+          <p
+            class="d-inline-block align-middle"
+            style="font-family: Roboto, sans-serifinitial;
+                  font-size: 400%;
+                  font-weight: bold;
+                  margin-left: 33%;
+                  letter-spacing: 8px;"
+          >
+            HOW WE WORK
+          </p>
+          <!-- <span class="d-inline-block line md ml-3 bg-white"></span> -->
+        </div>
+        <!-- <p
+          class="subtitle"
+          data-aos="fade-up"
+          style="font-family: Roboto, sans-serifinitial;
+                  font-size: 214%;
+                      font-weight: bold;"
+        >
+          Get a quote from us
+        </p> -->
+        <div class="content mt-5">
+          <div class="row">
+            <!-- <div class="col-lg-12" data-aos="fade-up">
+              <a
+                href="/get-quote"
+                class="btn custom-border white font-1 letter-spacing text-white"
+                style="font-family: Roboto, sans-serifinitial;"
+                >Get a Quote</a
+              >
+            </div> -->
+            <div class="col-lg-12 text-right" data-aos="fade-up">
+              <p
+                style="font-size:20px; font-family: Roboto, sans-serifinitial;margin-right: 44%;"
+              >
+                Have an Idea?
+              </p>
+              <p
+                style="font-size:20px; font-family: Roboto, sans-serifinitial;margin-right: 37%;"
+              >
+                Write to us and will get back to you
+              </p>
+              <p
+                style="font-size:20px; font-family: Roboto, sans-serifinitial; margin-right: 41%;"
+              >
+                within 2 working days
+              </p>
+              <p
+                class="subtitle"
+                data-aos="fade-up"
+                style="    font-family: Roboto, sans-serifinitial;
+                        font-size: 214%;
+                        font-weight: bold;
+                        text-align: center;"
+              >
+                Get a quote from us
+              </p>
+              <a
+                href="/get-quote"
+                class="btn custom-border white font-1 letter-spacing text-white"
+                style="font-family: Roboto, sans-serifinitial;     margin-right: 43%;
+                        margin-top: 3%;"
+                >Get a Quote</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid fifth">
+  <div class="container">
+    <div
+      class="row"
+      data-aos="fade-up"
+      style="margin-left: 16%;
+              margin-bottom: 8%;"
+    >
+      <!-- <div class="col-lg-12">
+        <img
+          src="../../assets/images/logo.jpg"
+          style="width: 71%;
+        margin-bottom: 10%;     margin-left: 15%;"
+        />
+      </div> -->
+      <div class="col-lg-4">
+        <div class="logo1">
+          <a href="https://lyricallemonade.com/">
+            <img
+              src="../../assets/images/logo (1).png"
+              style="    width: 40%; margin-top: 10%;     border-radius: 12%;"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="logo2">
+          <a href="https://apps.apple.com/us/app/cupid-dating-app/id379268567">
+            <img
+              src="../../assets/images/logo (2).png"
+              style="    width: 40%; margin-top: 10%;     border-radius: 12%;"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="logo3">
+          <a
+            href="https://apps.apple.com/gb/app/diet-training-by-ann/id1142970408"
+          >
+            <img
+              src="../../assets/images/logo (3).png"
+              style="    width: 40%; margin-top: 10%;     border-radius: 12%;"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="logo4">
+          <a
+            href="https://apps.apple.com/us/app/bolt-driver-taxify/id897442736"
+          >
+            <img
+              src="../../assets/images/logo (4).png"
+              style="    width: 40%; margin-top: 10%;     border-radius: 12%;"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="logo5">
+          <a href="https://apps.apple.com/us/app/ginko/id1029413955">
+            <img
+              src="../../assets/images/logo (5).png"
+              style="    width: 40%; margin-top: 10%;     border-radius: 12%;"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="logo6">
+          <a
+            href="https://apps.apple.com/us/app/the-sufferfest-training-system/id917325169?mt=8"
+          >
+            <img
+              src="../../assets/images/logo (6).png"
+              style="    width: 40%; margin-top: 10%; border-radius: 12%;"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid fifth">
+    <div class="container">
+      <div class="row" data-aos="fade-up">
+        <div class="col-lg-12" data-aos="fade-up">
+          <p
+            style="font-size: 400%;
+                        text-align: center;
+                        margin-top: 3%;
+                        font-weight: bold;"
+          >
+            A PROJECT WITH VITICAN PARTNER?
+          </p>
+          <p
+            style="font-size: 214%;
+                          text-align: center;
+                          margin-top: 6%;"
+          >
+            Services
+          </p>
+          <div class="but" style="margin-top: 4%;">
+            <button class="button button1" style="margin-left: 11%;">
+              interface design
+            </button>
+            <button class="button button1" style="margin-left: 11%;">
+              illustration
+            </button>
+            <button class="button button1" style="margin-left: 11%;">
+              identify
+            </button>
+          </div>
+          <div class="but" style="margin-top: 4%;">
+            <button class="button button1" style="margin-left: 11%;">
+              Development
+            </button>
+            <button class="button button1" style="margin-left: 11%;">
+              Animation
+            </button>
+            <!-- <button class="button button1" style="margin-left: 11%;">
+              btn1
+            </button> -->
+          </div>
+          <p
+            style="font-size: 214%;
+                                  text-align: center;
+                                      margin-top: 6%;"
+          >
+            Budget in USD
+          </p>
+          <div
+            class="but"
+            style="    margin-top: 4%;
+                margin-bottom: 8%;"
+          >
+            <button class="button button1" style="margin-left: 11%;">
+              less than 5k
+            </button>
+            <button class="button button1" style="margin-left: 11%;">
+              5K-50K
+            </button>
+            <button class="button button1" style="margin-left: 11%;">
+              more than 50K
+            </button>
+            <!-- <button class="button button1" style="margin-left: 11%;">
+                    more than 50K
+                  </button> -->
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <h3 class="font-2">Address</h3>
+          <p>
+            500 NE Colorado Street, <br />
+            Pullman WA 99163
+          </p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <h3 class="font-2">Phone</h3>
+          <p>
+            509-596-1385
+          </p>
+        </div>
+        <div class="col-lg-4 text-right">
+          <img
+            style="width: 100px !important;"
+            src="../../assets/images/logo.svg"
+          />
+          <!--        <a class="footer-icon" href=""><img class="icon" src="../../assets/icons/facebook.png"></a>-->
+          <!--        <a class="footer-icon" href=""><img class="icon" src="../../assets/icons/twitter.png"></a> <br>-->
+          <!--        <a class="footer-icon" href=""><img class="icon" src="../../assets/icons/google.png"></a>-->
+          <!--        <a class="footer-icon" href=""><img class="icon" src="../../assets/icons/dribble.png"></a>-->
+        </div>
+      </div>
+      <div class="row w-100 mt-5">
+        <div
+          class="col-lg-12 text-center text-white small font-2"
+          style="font-size: 17px;"
+        >
+          2020 all rights reserved
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu">
+    <div class="row header p-5 mt-4">
+      <div class="col-lg-6 col-sm-6 text-left">
+        <img class="logo ml-5" src="../../assets/images/logo-dark.png" />
+      </div>
+      <div class="col-lg-6 col-sm-6 text-right">
+        <button
+          class="btn font-2 btn-menu-close mr-5"
+          (click)="handleMenuCloseClick()"
+        >
+          <img class="icon" src="../../assets/icons/close.png" />
+        </button>
+      </div>
+    </div>
+    <ul class="">
+      <li>
+        <a class="font-2" href="/">HOME </a>
+      </li>
+      <li><a class="font-2" href="/portfolio">GINKO</a></li>
+      <li><a class="font-2" href="/cupid">CUPID</a></li>
+      <li><a class="font-2" href="/diet">DIET</a></li>
+      <li><a class="font-2" href="/suffer">SUFFER</a></li>
+      <li><a class="font-2" href="/bolt">BOLT</a></li>
+      <li><a class="font-2" href="/lyrical">Lyrical</a></li>
+      <li><a class="font-2" href="/get-quote">GET A QUOTE </a></li>
+      <li><a class="font-2" href="/contact">CONTACT US</a></li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,330 @@
+/* You can add global styles to this file, and also import other style files */
+@import (css)
+  url("//fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+@import (css) url("//fonts.googleapis.com/css?family=Anton&display=swap");
+@import (css)
+  url("//fonts.googleapis.com/css?family=Bebas+Neue&display=ssubtit;wap");
+
+@letterSpacing: 5.08px;
+
+body {
+  background-color: #ffffff;
+  font-family: fantasy;
+  font-size: 1.2rem !important;
+  font-weight: normal;
+  overflow-x: hidden !important;
+}
+.font-1 {
+  font-family: fantasy;
+}
+.font-2 {
+  font-family: Roboto, sans-serifinitial;
+  font-size: 20px;
+}
+.container-fluid {
+  position: relative;
+  float: left;
+}
+.container {
+  height: auto;
+  padding: 50px 0;
+}
+.banner {
+  height: 100vh;
+}
+.custom-border {
+  position: relative;
+  padding-left: 5px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  border-radius: 0 !important;
+  border-left: 1px solid !important;
+  border-bottom: 1px solid !important;
+  border-top: 1px solid !important;
+  border-right: none !important;
+  &.black {
+    border-left-color: black !important;
+    border-bottom-color: black !important;
+    border-top-color: black !important;
+    &:after {
+      content: "";
+      display: block;
+      width: 70%;
+      height: 1px;
+      padding: 0;
+      margin: 0;
+      background-color: white !important;
+      position: absolute;
+      right: 0;
+      top: -1px;
+    }
+  }
+  &.white {
+    border-left-color: white !important;
+    border-bottom-color: white !important;
+    border-top-color: white !important;
+    &:after {
+      content: "";
+      display: block;
+      width: 70%;
+      height: 1px;
+      padding: 0;
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      right: 0;
+      top: -1px;
+    }
+  }
+}
+.custom-border-2 {
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  border-radius: 0 !important;
+  border-left: 1px solid #ffffff !important;
+  border-top: 1px solid #ffffff !important;
+  height: 100%;
+  &:after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    position: absolute;
+    right: -35px;
+    top: 35px;
+    transform: rotate(90deg);
+  }
+}
+.line {
+  width: 100px;
+  height: 1px;
+  background-color: black;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  &.sm {
+    width: 35px;
+  }
+  &.md {
+    width: 150px;
+  }
+  &.lg {
+    width: 100%;
+  }
+  &.vertical {
+    transform: rotate(90deg);
+  }
+  &.circle {
+    &.left {
+      &:before {
+        position: absolute;
+        left: 0;
+        top: -5px;
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: black;
+      }
+    }
+    &.right {
+      &:after {
+        position: absolute;
+        right: 0;
+        top: -5px;
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: black;
+      }
+    }
+  }
+}
+.letter-spacing {
+  letter-spacing: 5.08px;
+}
+h1 {
+  font-family: initial;
+  letter-spacing: 13.7px !important;
+}
+.subtitle {
+  font-family: initial;
+  letter-spacing: @letterSpacing;
+  font-size: 17px;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.lh-0 {
+  line-height: 17px !important;
+}
+i.fa {
+  font-family: "FontAwesome";
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  z-index: 999;
+  display: none;
+  & .header {
+    width: 100%;
+    color: black !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  & ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    & li {
+      display: block;
+    }
+    & a {
+      text-decoration: none;
+      position: relative;
+      color: black;
+      font-size: 40px;
+      padding: 20px 0 !important;
+    }
+  }
+  & .line {
+    height: 2px;
+  }
+}
+.logo {
+  width: 100px;
+  vertical-align: top;
+}
+.icon {
+  width: 20px !important;
+  height: 20px !important;
+  display: inline-block !important;
+}
+.footer-icon {
+  margin: 5px;
+}
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  color: #ffffff !important;
+}
+.header-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  & button {
+    position: inherit;
+    right: 0;
+  }
+  & img {
+    width: 150px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    width: 100vw;
+
+    & .col-lg-6 {
+      display: inline-block !important;
+      width: 50% !important;
+    }
+  }
+  // .font-2 {
+  //   font-size: 10px;
+  // }
+  .logo.float-none {
+    float: left !important;
+  }
+  .banner-content {
+    height: calc(100vh - 200px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+
+    & .wrapper-1,
+    .wrapper-2 {
+      display: none !important;
+    }
+    & img {
+      height: auto;
+      width: 60%;
+      margin-left: 20% !important;
+    }
+  }
+  .third {
+    .line {
+      display: none !important;
+    }
+  }
+  .fourth {
+    .col-lg-6 {
+      margin: 15px 0;
+    }
+  }
+  .fifth {
+    & .col-lg-4 {
+      text-align: center !important;
+    }
+    & .col-lg-12 {
+      padding: 0;
+    }
+  }
+  .col-lg-12 {
+    padding: 0 15px !important;
+  }
+  .portfolio-content {
+    overflow: hidden !important;
+  }
+  .menu {
+    & .header {
+      padding: auto 0 !important;
+      & img {
+        margin-left: 0 !important;
+      }
+      & .btn-menu-close {
+        margin-right: 0 !important;
+        margin-top: -1px;
+      }
+    }
+  }
+}
+
+.sufferlogo {
+  transition: all 0.2s ease-in-out;
+}
+.sufferlogo:hover {
+  transform: scale(1.05);
+}
+
+.before {
+  transition: all 0.2s ease-in-out;
+}
+.before:hover {
+  transform: scale(1.05);
+}
+
+.next {
+  transition: all 0.2s ease-in-out;
+}
+.next:hover {
+  transform: scale(1.05);
+}

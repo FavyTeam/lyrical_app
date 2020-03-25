@@ -1,0 +1,163 @@
+<div class="container-fluid">
+  <div class="container h-100">
+    <app-header></app-header>
+    <div class="row h-100">
+      <div class="col-lg-12 mt-5 text-center">
+        <div class="title" data-aos="fade-right">
+          <h1 class="d-inline-block align-middle">GET A QUOTE</h1>
+<!--          <span class="d-inline-block line md ml-3"></span>-->
+        </div>
+        <h4 class="subtitle" data-aos="fade-up">Get a quote in 2 days</h4>
+      </div>
+      <form name="quoteForm" class="w-100" id="" action="email.php" method="post" enctype="multipart/form-data">
+        <div class="col-lg-12">
+          <div class="w-100 text-center mt-5 mb-5"><h3 class="font-2">Tell us about you</h3></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <input type="text" class="form-control" name="first_name" placeholder="First Name">
+          </div>
+          <div class="col-lg-6">
+            <input type="text" class="form-control" name="last_name" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <input type="text" class="form-control" name="phone" placeholder="Phone Number">
+          </div>
+          <div class="col-lg-6">
+            <input type="text" class="form-control" name="email" placeholder="Email Address">
+          </div>
+        </div>
+        <div class="row">
+        <div class="col-lg-12">
+          <div class="text-center  mt-5 mb-5"><h3 class="font-2">Tell us about your project</h3></div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-lg-12">
+          <textarea name="description" placeholder="Give us a brief about your project"></textarea>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="w-100 text-center  mt-5 mb-5"><h3 class="font-2">What Are You Looking For?</h3></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="md-checkbox">
+              <input name="values[]" value="Enterprise Software Solutions" id="check1" type="checkbox">
+              <label for="check1">Enterprise Software Solutions</label>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="md-checkbox">
+              <input name="values[]" value="Creating a Mobile App" id="check2" type="checkbox">
+              <label for="check2">Creating a Mobile App</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="md-checkbox">
+              <input name="values[]" value="Dedicated Team Service" id="check3" type="checkbox">
+              <label for="check3">Dedicated Team Service</label>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="md-checkbox">
+              <input name="values[]" value="Web Development" id="check4" type="checkbox">
+              <label for="check4">Web Development</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="md-checkbox">
+              <input name="values[]" value="IT Consulting Services" id="check5" type="checkbox">
+              <label for="check5">IT Consulting Services</label>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="md-checkbox">
+              <input id="check6" value="Partnership Opportunities" type="checkbox">
+              <label for="check6">Partnership Opportunities</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <input type="text" class="form-control" name="budget" placeholder="Select your budget range">
+          </div>
+          <div class="col-lg-6">
+            <input type="text" class="form-control" name="start" placeholder="When you want to start">
+          </div>
+        </div>
+<!--        <div class="row">-->
+<!--          <div class="col-lg-12 mt-5">-->
+<!--            <input type="file" class="select-attachment d-none">-->
+<!--            <div class="attachment-upload" (click)="handleSelectAttachmentClick()">-->
+<!--              Upload your attachment here-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+        <div class="row text-center mt-5">
+          <div class="col-lg-12">
+            <button class="btn font-2 custom-border black d-inline-block letter-spacing" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="container-fluid fifth bg-black">
+  <div class="container">
+    <div class="row" data-aos="fade-up">
+      <div class="col-lg-4">
+        <h3 class="font-2">Address</h3>
+        <p>
+          500 NE Colorado Street,  <br>
+          Pullman WA 99163
+        </p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <h3 class="font-2">Phone</h3>
+        <p>
+          509-596-1385
+        </p>
+      </div>
+      <div class="col-lg-4 text-right">
+        <h3 class="font-2">Social</h3>
+        <a class="footer-icon" href=""><img class="icon" src="../../assets/icons/facebook.png"></a>
+        <a class="footer-icon" href=""><img class="icon" src="../../assets/icons/twitter.png"></a> <br>
+        <a class="footer-icon" href=""><img class="icon" src="../../assets/icons/google.png"></a>
+        <a class="footer-icon" href=""><img class="icon" src="../../assets/icons/dribble.png"></a>
+      </div>
+    </div>
+    <div class="row w-100 mt-5">
+      <div class="col-lg-12 text-center text-white small font-2">
+        2020 all rights reserved
+      </div>
+    </div>
+  </div>
+</div>
+<div class="menu">
+  <div class="row header p-5 mt-4">
+    <div class="col-lg-6 col-sm-6 text-left">
+      <img class="logo ml-5" src="../../assets/images/logo-dark.png">
+    </div>
+    <div class="col-lg-6 col-sm-6 text-right">
+      <button class="btn font-2 btn-menu-close mr-5" (click)="handleMenuCloseClick()"><img class="icon" src="../../assets/icons/close.png"></button>
+    </div>
+  </div>
+  <ul class="">
+    <li>
+      <a class="font-2" href="/">HOME</a>
+    </li>
+    <li><a class="font-2" href="/portfolio">PORTFOLIO </a></li>
+    <li><a class="font-2" href="/get-quote">GET A QUOTE <span class="line sm"></span></a></li>
+    <li><a class="font-2" href="/contact">CONTACT US </a></li>
+  </ul>
+</div>
+

@@ -22,7 +22,7 @@
     "aos": "^2.0.0",
     "bootstrap": "^4.4.1",
     "boxicons": "^2.0.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lightbox2": "^2.11.1",
     "ngx-spinner": "^8.1.0",
     "rxjs": "~6.5.4",
